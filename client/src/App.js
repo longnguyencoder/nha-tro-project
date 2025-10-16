@@ -1,10 +1,14 @@
 import './index.css';
-
-
+import { Route, Routes } from 'react-router-dom';
+import { Home, Login } from './containers/Public';
+import { path } from './ultils/contant'
 function App() {
   return (
-    <div className="bg-red-400">
-      APP
+    <div className="h-screen w-screen bg-primary">
+      <Routes>
+        <Route path={path.HOME} element={<Home />} />
+        <Route path={path.LOGIN} element={<Login />} />
+      </Routes>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 // State khởi tạo ban đầu cho phần xác thực người dùng
 const initState = {
-    isLoggedIn: true,  // xem người dùng đã đăng nhập hay chưa.
-    token: 123455343
+    isLoggedIn: false,  // xem người dùng đã đăng nhập hay chưa.
+    token: null
 };
 
 // Hàm reducer xử lý các action liên quan đến xác thực
