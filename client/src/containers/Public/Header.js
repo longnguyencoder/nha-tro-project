@@ -10,7 +10,9 @@ const Header = () => {
     const goLogin = useCallback((flag) => {
         navigate(path.LOGIN, { state: { flag } })
     }, [])
-
+    const goRegister = useCallback((flag) => {
+        navigate(path.REGISTER, { state: { flag } })
+    }, [])
     return (
         <div className='w-1100 flex items-center justify-between'>
             <img src={logo} alt='logo'
@@ -31,7 +33,7 @@ const Header = () => {
                     text={'Đăng ký'}
                     textColor='text-white'
                     bgColor='bg-[#3961fb]'
-                    onClick={() => goLogin(false)}
+                    onClick={() => goRegister(false)}
                 />
                 {/* nút đăng tin mới */}
                 <Button
